@@ -27,10 +27,10 @@
 	];
 
 	// ! tuple
-	const couple: [string, string] = ['Joy', 'Mifta'];
+	const couple: [string, string] = ['Joy', 'Gour'];
 
 	type GenericTuple<X, Y> = [X, Y];
-	const couple2: GenericTuple<string, string> = ['Gour', 'Prokiti'];
+	const couple2: GenericTuple<string, string> = ['Gour', 'Joy'];
 
 	const UserID: GenericTuple<number, { name: string; email: string }> = [1212, { name: 'Joy', email: 'dfar' }];
 	//
