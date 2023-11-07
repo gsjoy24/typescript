@@ -7,5 +7,6 @@
 		const data = await res.json();
 		return data;
 	};
-	getData();
+
+	console.log(getData());
 }
