@@ -28,9 +28,15 @@ const users: user[] = [
 	}
 ];
 
-const getPropertyFromArray = <T, K extends keyof T>(arr: T[], key: K): T[K][] => {
-	return arr.map((obj) => obj[key]);
-};
+const getPropertyFromArray =
+	// ! generic
+	<T, K extends keyof T>(
+		arr: T[],
+		key: K
+	): // ! generic
+	T[K][] => {
+		return arr.map((obj) => obj[key]);
+	};
 
 // practicing
 console.log(getPropertyFromArray(users, 'id'));
