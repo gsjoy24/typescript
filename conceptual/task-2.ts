@@ -21,3 +21,8 @@ const getObj = <T extends string, U>(arr: [T, U][]): Record<T, U> => {
 };
 
 console.log(getObj(keyValArr));
+
+// understanding reduce
+const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sum = numbers.reduce((total, number) => total + number, 0);
+console.log(sum);
